@@ -13,7 +13,7 @@
     "lint": "next lint",
     "dev": "next dev",
     "backend": "nodemon index",
-    "installProduction": "npm run i && npm run prod"
+    "installProduction": "npm run i && npm run build"
   },
   "keywords": [
     "devop",
