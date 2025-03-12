@@ -7,13 +7,11 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
     "devserver": "dotenv -e .env.development -- nodemon index.js",
-    "prod": "dotenv -e .env -- nodemon index.js",
-    "production": "node index.js",
+    "production": "dotenv -e .env -- nodemon index.js",
     "build": "next build",
     "lint": "next lint",
     "dev": "next dev",
-    "backend": "nodemon index",
-    "installProduction": "npm run i && npm run build"
+    "backend": "nodemon index"
   },
   "keywords": [
     "devop",
@@ -21,7 +19,7 @@
     "fullstack",
     "developer"
   ],
-  "author": "Nikunj Bansal",
+  "author": "Anurag",
   "license": "ISC",
   "dependencies": {
     "@prisma/client": "^6.2.1",
@@ -45,13 +43,14 @@
     "react-countup": "^6.5.3",
     "react-dom": "^19.0.0",
     "react-hot-toast": "^2.5.1",
-    "react-hotkeys-hook": "^4.6.1",
     "react-icons": "^5.4.0",
     "react-intersection-observer": "^9.15.0",
     "react-loading-indicators": "^1.0.0",
-    "react-select": "^5.10.0",
+    "react-select": "^5.10.0"
+  },
+  "devDependencies": {
     "autoprefixer": "^10.4.20",
     "postcss": "^8.4.49",
     "tailwindcss": "^3.4.17"
-  },
+  }
 }
