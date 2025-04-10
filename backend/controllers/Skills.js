@@ -35,6 +35,7 @@ exports.fetchSkills = async (req, res) => {
     }
     return res.status(200).json(skills);
   } catch (error) {
+    console.log('error: ', error);
     return res.status(500).json({ message: "Internal Server Error." });
   } finally {
     await prisma.$disconnect();
