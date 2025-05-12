@@ -63,7 +63,7 @@ const page = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center min-h-screen px-4 space-y-10 mt-10">
+    <div className="flex flex-col items-center min-h-screen px-4 space-y-10 mt-10 mb-8">
       {loading ? (
         <div className="w-screen h-screen flex items-center justify-center">
           <Atom color="#5de3a0" size="large" text="Incoming" textColor="" />

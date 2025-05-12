@@ -30,7 +30,7 @@ const Header = () => {
             {navLinks.map((link, index) => (
               <li
                 key={index}
-                className="px-5 mx-5 hover:underline text-white text-lg"
+                className="relative px-5 pb-1 mx-5 text-white text-lg transition-all duration-300 after:content-[''] after:absolute after:bottom-0 after:left-1/4 after:w-1/2 after:h-0.5 after:bg-white after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:origin-center"
               >
                 <a href={link.href}>{link.name}</a>
               </li>

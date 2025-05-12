@@ -40,7 +40,11 @@ exports.addExperience = async (req, res) => {
 
 exports.fetchExperience = async (req, res) => {
   try {
-    const experiences = await prisma.experience.findMany();
+    const experiences = await prisma.experience.findMany({
+      orderBy: {
+        createdAt: "asc",
+      },
+    });
     if (!experiences || experiences.length === 0) {
       return res.status(404).json({ message: "No experiences found" });
     }

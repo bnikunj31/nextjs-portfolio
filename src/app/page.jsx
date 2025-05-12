@@ -4,6 +4,7 @@ import Home from "@/components/Home/Home";
 import Skill from "@/components/Skills/Skills";
 import Projects from "@/components/Projects/Projects";
 import Stats from "@/components/StatsSection/StatsSection";
+import ExperienceTimeline from "@/components/Experience/Experience";
 
 const Page = () => {
   return (
@@ -13,6 +14,8 @@ const Page = () => {
         <Home />
         {/* Skills Section */}
         <Skill />
+        {/* Experience Section */}
+        <ExperienceTimeline />
         {/* Projects Section */}
         <Projects />
         {/* Stats Section */}

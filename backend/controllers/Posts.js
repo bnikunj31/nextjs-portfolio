@@ -70,7 +70,11 @@ exports.addPost = async (req, res) => {
 
 exports.getPost = async (req, res) => {
   try {
-    const projects = await prisma.project.findMany();
+    const projects = await prisma.project.findMany({
+      orderBy: {
+        createdAt: "desc",
+      },
+    });
     return res.status(200).json(projects);
   } catch (error) {
     return res.status(500).json({ message: "Internal Server Error." });
