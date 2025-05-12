@@ -7,11 +7,12 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
     "devserver": "dotenv -e .env.development -- nodemon index.js",
-    "production": "dotenv -e .env -- nodemon index.js",
+    "production": "dotenv -e .env -- node index.js",
     "build": "next build",
     "lint": "next lint",
     "dev": "next dev",
-    "backend": "nodemon index"
+    "backend": "nodemon index",
+    "postinstall": "npx prisma generate"
   },
   "keywords": [
     "devop",
